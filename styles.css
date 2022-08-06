@@ -93,6 +93,10 @@ html {
     position: absolute;
     top: 70rem;
 }
+
+.section-1-btn:hover {
+  color: #dfcd07;
+}
 /*End of section 1*/
 
 /*Navbar*/
