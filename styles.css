@@ -443,6 +443,19 @@ flex-direction: column;
   display: inline-block;
 }
 
+.linked-in {
+  background-color: rgb(0, 71, 152);
+}
+
+.code-pen {
+  background-color: rgb(0, 0, 0);
+}
+
+.github {
+background-color: rgb(0, 0, 0);
+
+}
+
 .social-media-link i {
   font-size: 3rem;
   color: #fff;
