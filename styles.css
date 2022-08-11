@@ -24,11 +24,11 @@ html {
 
 .section-heading {
   font-size: 5rem;
-  color: #333;
+  color: #8b1313;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   margin-bottom: 15rem;
-  border-bottom: 0.3rem solid #333;
+  border-bottom: 0.3rem solid #8b1313;;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
@@ -40,10 +40,10 @@ html {
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(138, 178, 251, 0.75),
-      rgba(235, 144, 255, 0.75)
+      rgba(223, 223, 223, .95),
+      rgba(203, 59, 59, .95)
     ),
-    url(./images/laptop-wallpaper.png);
+    url(./images/logo-wallpaper.png);
   background-size: cover;
   flex-direction: column;
   position: relative;
@@ -52,12 +52,12 @@ html {
 .section-1-heading {
   font-size: 2.3rem;
   color: #fffffff3;
-  background-color: rgb(45, 0, 84);
+  background-color: rgb(139, 2, 2);
   margin: 5rem 0;
   padding: 0.5rem 3rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  border: 0.1rem solid rgb(151, 0, 189);
+  border: 0.1rem solid rgb(0, 0, 0);
   border-radius: 5rem;
   position: absolute;
   top: 5.5rem;
@@ -69,7 +69,7 @@ html {
   height: 20rem;
   object-fit: cover;
   border-radius: 50%;
-  background-color: rgba(136, 92, 183, 0.7);
+  background-color: rgba(159, 0, 0, 0.871);
   padding: 0.5rem;
   opacity: 0.9;
   position: absolute;
@@ -79,12 +79,12 @@ html {
 .my-name {
   font-size: 2.3rem;
   color: #fffffff3;
-  background-color: rgb(45, 0, 84);
+  background-color: rgb(139, 2, 2);
   margin: 5rem 0;
   padding: 0.5rem 3rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
-  border: 0.1rem solid rgb(151, 0, 189);
+  border: 0.1rem solid rgb(0, 0, 0);
   border-radius: 5rem;
   position: absolute;
   top: 5rem;
@@ -95,7 +95,8 @@ html {
   display: block;
   font-size: 12rem;
   font-family: "Bebas Neue", cursive;
-  color: #f7f79d;
+  color: #880202;
+  background-color: rgba(255, 255, 255, 0.383);
   margin-top: 7rem;
   letter-spacing: 0.8rem;
   animation-name: moveInLeft;
@@ -107,7 +108,8 @@ html {
   display: block;
   font-size: 12rem;
   font-family: "Bebas Neue", cursive;
-  color: #f7f79d;
+  color: #880202;
+  background-color: rgba(255, 255, 255, 0.383);
   margin-top: 7rem;
   letter-spacing: 0.8rem;
   animation: moveInRight 4s ease-out;
@@ -168,7 +170,7 @@ html {
 .navbar {
   width: 100%;
   height: 4rem;
-  background-color: #583a68;
+  background-color: #8b1313;
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
   position: absolute;
   z-index: 300;
@@ -191,14 +193,14 @@ html {
 }
 
 .navbar-link:hover {
-  color: #dfcd07;
+  color: #e98222;
 }
 
 .navbar-link::before {
   content: "";
   width: 0;
   height: 0.2rem;
-  background-color: #dfcd07;
+  background-color: #e98222;
   position: absolute;
   right: -15%;
   bottom: -0.3rem;
@@ -242,13 +244,6 @@ html {
   margin: 0 0.5rem;
   font-size: 1.8rem;
   font-weight: 700;
-}
-
-.progress-percent {
-  width: 90%;
-  height: 100%;
-  background-color: #e41c6f;
-  border-radius: 00.3rem;
 }
 
 .services {
