@@ -223,27 +223,17 @@ html {
   align-items: center;
 }
 
-.progress-bar {
-  width: 60rem;
-  height: 3rem;
-  background-color: #ccc;
-  margin: 1.5rem 0;
-  border-radius: 0.3rem;
-  box-shadow: 0.2rem 0.2rem 1rem #555;
-  position: relative;
+.logos-container {
+  display: flex;
+  margin-bottom: 10rem;
 }
 
-.progress-text {
-  position: absolute;
-  left: 1rem;
-  font-size: 1.5rem;
-  color: white;
-}
-
-.progress-text span {
-  margin: 0 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
 }
 
 .services {
@@ -265,7 +255,7 @@ html {
 
 .service i {
   font-size: 10rem;
-  color: #888;
+  color: rgb(96, 33, 33);
   margin-bottom: 2rem;
   text-shadow: 0.1rem 0.1rem 0.5rem #555;
 }
@@ -273,7 +263,7 @@ html {
 .service h2 {
   font-size: 2rem;
   color: #fff;
-  background-color: #777;
+  background-color: rgb(96, 33, 33);
   width: 25rem;
   letter-spacing: 0.3rem;
   transform: skew(-10deg);
@@ -286,7 +276,7 @@ html {
   width: 100%;
   height: 100%;
   padding: 10rem 0;
-  background-color: #eef;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,7 +363,7 @@ html {
 .section-4 {
   width: 100%;
   height: 70vh;
-  background-color: #333;
+  background-color: rgb(54, 10, 10);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,7 +389,7 @@ html {
   margin: 0.5rem;
   background-color: #eef;
   font-size: 1.5rem;
-  border: 0.2rem solid #e41c6f;
+  border: 0.2rem solid #860b0b;
   color: #555;
 }
 
@@ -410,7 +400,7 @@ html {
 }
 
 .contact-form .contact-form-btn {
-  background-color: #583a68;
+  background-color: #000000;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1rem;
@@ -422,7 +412,7 @@ html {
 .section-5 {
 width: 100%;
 height: 30vh;
-background-color: #222;
+background-color: rgb(255, 255, 255);
 flex-direction: column;
 }
 
