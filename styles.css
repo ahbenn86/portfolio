@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -192,6 +193,10 @@ html {
   transition: color 0.2s;
 }
 
+.change.navbar-link {
+  color: rgb(101, 0, 111);
+}
+
 .navbar-link:hover {
   color: #e98222;
 }
@@ -205,6 +210,10 @@ html {
   right: -15%;
   bottom: -0.3rem;
   transition: width 0.2s;
+}
+
+.change.navbar-link::before {
+  width: 130%;
 }
 
 .navbar-link:hover::before {
