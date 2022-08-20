@@ -4,6 +4,10 @@ const sections = document.querySelectorAll('section');
 const navbarLinks = document.querySelectorAll('.navbar-link');
 
 window.addEventListener("scroll", ()=>{
+    mainFn();
+});
+
+const mainFn = () => {
     if (window.pageYOffset >= navbarOffsetTop){
         navbar.classList.add("sticky");
     } else {
@@ -18,4 +22,10 @@ window.addEventListener("scroll", ()=>{
             navbarLinks[i].classList.add("change");
         }
     });
-});
+}
+
+mainFn();
+
+// window.addEventListener('resize', () => {
+//     window.location.reload();
+// })

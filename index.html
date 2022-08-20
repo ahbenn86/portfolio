@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
@@ -143,11 +141,14 @@
       <h1 class="section-heading section-4-heading">
         Contact Me
       </h1>
-      <form class="contact-form">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
+      <form action="https://formsubmit.co/angelobennett86@gmail.com" method="POST" class="contact-form">
+        <!-- <input type="hidden" name="_subject" value="New submission!"> -->
+        <input type="text" name="text" placeholder="Name">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="tel" placeholder="Phone">
+        <textarea name="input" placeholder="Message"></textarea>
         <input type="submit" value="Submit" class="contact-form-btn">
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html"> -->
       </form>
     </section>
     <!--End of section 4-->
@@ -155,9 +156,12 @@
     <!--Section 5-->
     <footer class="section-5 center">
       <div class="social-media">
-        <a href="https://github.com/ahbenn86" class="social-media-link github" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a href="https://www.linkedin.com/in/abennett2/" class="social-media-link linked-in" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://codepen.io/ahbenn86/pens/" class="social-media-link code-pen" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+        <a href="https://github.com/ahbenn86" class="social-media-link github" target="_blank"><i
+            class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/abennett2/" class="social-media-link linked-in" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://codepen.io/ahbenn86/pens/" class="social-media-link code-pen" target="_blank"><i
+            class="fa-brands fa-codepen"></i></a>
       </div>
       <p class="copyright">&copy; 2022 Developed by Angelo Bennett</p>
     </footer>
