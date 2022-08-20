@@ -141,14 +141,12 @@
       <h1 class="section-heading section-4-heading">
         Contact Me
       </h1>
-      <form action="https://formsubmit.co/angelobennett86@gmail.com" method="POST" class="contact-form">
-        <!-- <input type="hidden" name="_subject" value="New submission!"> -->
+      <form class="contact-form">
         <input type="text" name="text" placeholder="Name">
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="tel" placeholder="Phone">
         <textarea name="input" placeholder="Message"></textarea>
         <input type="submit" value="Submit" class="contact-form-btn">
-        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html"> -->
       </form>
     </section>
     <!--End of section 4-->
@@ -168,6 +166,26 @@
     <!--End of section 5-->
   </div>
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('dvKhYuMHKvUarnPvj');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 </body>
 
 </html>
