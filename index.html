@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angelo Bennett | Welcome</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('dvKhYuMHKvUarnPvj');
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,14 +22,14 @@
   <div class="container">
     <!--Section 1-->
     <section class="section-1 center" id="section-1">
-      <h1 class="section-1-heading">
+      <h1 class="section-1-heading top-drop">
         Web Developer
       </h1>
       <img src="./images/angelo-portrait.png" alt="Angelo Bennett" class="portrait-img">
-      <h3 class="my-name">Angelo Bennett</h3>
+      <h3 class="my-name top-drop">Angelo Bennett</h3>
       <div class="text-box">
-        <span class="q-line-1">"Do what you love</span>
-        <span class="q-line-2">love what you do"</span>
+        <span class="q-line-1 floats">"Do what you love</span>
+        <span class="q-line-2 floats">love what you do"</span>
       </div>
       <a href="#section-3" class="section-1-btn">Projects</a>
     </section>
@@ -57,7 +60,7 @@
         <div class="logo-container">
           <img class="react-logo" src="./images/logos/react.webm" alt="#">
         </div>
-        <div class="logo-container">
+        <div class="logo-container node">
           <img class="node-logo" src="./images/logos/node-js.png" alt="#">
         </div>
         <!-- <div class="logo-container">
@@ -141,12 +144,12 @@
       <h1 class="section-heading section-4-heading">
         Contact Me
       </h1>
-      <form class="contact-form">
-        <input type="text" name="text" placeholder="Name">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="tel" placeholder="Phone">
-        <textarea name="input" placeholder="Message"></textarea>
-        <input type="submit" value="Submit" class="contact-form-btn">
+      <form class="contact-form" id="contact-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="tel" placeholder="Phone">
+        <textarea id="msg" placeholder="Message"></textarea>
+        <button onclick='sendMail()' type="submit" value="Submit" class="contact-form-btn">Submit</button>
       </form>
     </section>
     <!--End of section 4-->
@@ -166,26 +169,6 @@
     <!--End of section 5-->
   </div>
   <script src="script.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('dvKhYuMHKvUarnPvj');
-    })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function () {
-      document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        this.contact_number.value = Math.random() * 100000 | 0;
-        emailjs.sendForm('contact_service', 'contact_form', this)
-          .then(function () {
-            console.log('SUCCESS!');
-          }, function (error) {
-            console.log('FAILED...', error);
-          });
-      });
-    }
-  </script>
 </body>
 
 </html>
