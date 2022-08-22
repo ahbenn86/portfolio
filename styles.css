@@ -534,6 +534,7 @@ html {
     width: 40rem;
     height: 40rem;
     font-size: 10rem;
+    visibility: hidden;
   }
 
   .portrait-img {
