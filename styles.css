@@ -524,7 +524,7 @@ html {
   }
 }
 
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .top-drop{
     width: 15rem;
     font-size: 1rem;
@@ -564,7 +564,8 @@ html {
 
   .logos-container {
     width: 40rem;
-  } */
+  }
+}
 
   @media only screen 
     and (device-width: 414px) 
