@@ -6,12 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Angelo Bennett | Welcome</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('dvKhYuMHKvUarnPvj');
-    })();
-  </script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -141,12 +135,12 @@
       <h1 class="section-heading section-4-heading">
         Contact Me
       </h1>
-      <form class="contact-form" id="contact-form">
-        <input type="text" id="name" placeholder="Name">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="tel" id="tel" placeholder="Phone">
-        <textarea id="msg" placeholder="Message"></textarea>
-        <button onclick='sendMail()' type="submit" value="Submit" class="contact-form-btn">Submit</button>
+      <form class="contact-form" id="form">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="telephone" placeholder="Phone">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" value="Submit" class="contact-form-btn" id="submit-button">Submit</button>
       </form>
     </section>
     <!--End of section 4-->
@@ -165,6 +159,11 @@
     </footer>
     <!--End of section 5-->
   </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('dvKhYuMHKvUarnPvj')
+  </script>
   <script src="script.js"></script>
 </body>
 
