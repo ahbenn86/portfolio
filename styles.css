@@ -598,6 +598,28 @@ html {
     visibility: hidden;
   }
 
+  .mobile-float {
+    width: 40rem;
+    height: 40rem;
+    font-size: 5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 35rem;
+    left: 5rem;
+    background-color: #ba2f3fba;
+    animation: animate 3s infinite;
+  }
+
+  .mobile-float-text {
+    display: flex;
+    position: relative;
+    top: 14rem;
+    left: 2rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.736);
+  }
+
   html {
     font-size: 45%;
   }
@@ -621,6 +643,18 @@ html {
 
   .logos-container {
     width: 40rem;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
   }
 }
 
