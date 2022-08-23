@@ -33,6 +33,10 @@ html {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+.mobile-float {
+  visibility: hidden;
+}
+
 /*End of Reset and Common Styles*/
 
 /*Section 1*/
@@ -524,50 +528,6 @@ html {
   }
 }
 
-/* @media (max-width: 450px) {
-  .top-drop {
-    width: 15rem;
-    font-size: 1rem;
-  }
-
-  .floats {
-    width: 40rem;
-    height: 40rem;
-    font-size: 10rem;
-    visibility: hidden;
-  }
-
-  .portrait-img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  html {
-    font-size: 45%;
-  }
-
-  .section-1-heading {
-    font-size: 2.5rem;
-    font-size: 1rem;
-  }
-
-  .section-1-heading {
-    font-size: 1rem;
-  }
-
-  .navbar-link {
-    margin: 0 1.5rem;
-  }
-
-  .section-2-heading {
-    text-align: center;
-  }
-
-  .logos-container {
-    width: 40rem;
-  }
-} */
-
 @media (max-width: 450px) {
   .section-1 {
     width: 100%;
@@ -609,6 +569,7 @@ html {
     left: 5rem;
     background-color: #ba2f3fba;
     animation: animate 3s infinite;
+    visibility: visible;
   }
 
   .mobile-float-text {

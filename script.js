@@ -30,6 +30,10 @@ const mainFn = () => {
 
 mainFn();
 
+window.addEventListener('resize', () => {
+    window.location.reload();
+})
+
 submitButton.addEventListener("click", function (e) {
   e.preventDefault();
   const serviceID = "default_service";
@@ -50,6 +54,4 @@ submitButton.addEventListener("click", function (e) {
   message.value = '';
 });
 
-// window.addEventListener('resize', () => {
-//     window.location.reload();
-// })
+
