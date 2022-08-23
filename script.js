@@ -30,9 +30,6 @@ const mainFn = () => {
 
 mainFn();
 
-window.addEventListener('resize', () => {
-    window.location.reload();
-})
 
 submitButton.addEventListener("click", function (e) {
   e.preventDefault();
