@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 /*Reset and Common Styles*/
 * {
@@ -34,11 +34,19 @@ html {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+/*End of Reset and Common Styles*/
+
+/*Mobile view resets*/
 .mobile-float {
   visibility: hidden;
 }
 
-/*End of Reset and Common Styles*/
+.mobile-view-only {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*End of mobile view resets*/
 
 /*Section 1*/
 .section-1 {
@@ -239,14 +247,14 @@ html {
 
 .about-me-paragraph {
   background-color: #b64e4edb;
-  box-shadow: .5rem .5rem #a4a4a4;
+  box-shadow: 0.5rem 0.5rem #a4a4a4;
   width: 70rem;
   height: 43rem;
   color: rgb(255, 255, 255);
   font-size: 2rem;
   margin-bottom: 10rem;
   border-radius: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .about-me-text {
@@ -550,7 +558,6 @@ html {
 }
 
 @media (max-width: 450px) {
-
   .section-1 {
     width: 100%;
     height: 100vh;
@@ -603,6 +610,14 @@ html {
     color: rgba(255, 255, 255, 0.736);
   }
 
+  .mobile-view-only {
+    visibility: visible;
+    width: 15rem;
+    height: 1.3rem;
+    display: flex;
+    justify-content: center;
+  }
+
   html {
     font-size: 45%;
   }
@@ -625,16 +640,16 @@ html {
   }
 
   .about-me-paragraph {
-      background-color: #b64e4edb;
-      box-shadow: .5rem .5rem #a4a4a4;
-      width: 43rem;
-      height: 43rem;
-      color: rgb(255, 255, 255);
-      font-size: 2rem;
-      margin-bottom: 10rem;
-      border-radius: 3rem;
-      font-family: 'Poppins', sans-serif;
-      overflow: scroll;
+    background-color: #b64e4edb;
+    box-shadow: 0.5rem 0.5rem #a4a4a4;
+    width: 43rem;
+    height: 43rem;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    border-radius: 3rem;
+    font-family: "Poppins", sans-serif;
+    overflow: scroll;
   }
 
   .logos-container {
